@@ -11,7 +11,7 @@ const webhookSecretKey = '1f9ae895-3777-46d2-b9bf-485f6eacb927';
 
 app.use(bodyParser.json());
 
-app.post('/.netlify/functions/webhook', (req, res) => {
+app.post('/netlify/functions/webhook', (req, res) => {
   const payload = JSON.stringify(req.body);
   const timestamp = req.header('X-Signature-Timestamp');
   const signatureHeader = req.header('X-Signature');
