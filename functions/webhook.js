@@ -1,11 +1,8 @@
-// netlify/functions/webhook.js
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 const webhookSecretKey = '1f9ae895-3777-46d2-b9bf-485f6eacb927';
 
